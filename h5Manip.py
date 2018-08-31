@@ -1,5 +1,5 @@
 '''
-Author: Eric Oropezaelwood
+Author: Eric Oropezaelwood, Glenn Grant
 Date: 31 August 2018
 Purpose: Take in an hdf5 file and run statistical calculations across
 the columns/frames.
