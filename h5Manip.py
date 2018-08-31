@@ -25,25 +25,25 @@ def datasetToNumpyArray(inputFile):
 def statisticsAcrossColumns(inputArray):
 
 	# find the STANDARD DEVIATION of CalNp
-	stdArray = np.std(inputArray, axis = 0) # axis = 0 represents columns
+	stdArray = np.nanstd(inputArray, axis = 0) # axis = 0 represents columns
 	print("Standard Deviation across columns: ")
 	print(stdArray)
 	print("")
 
 	# find the MEAN of the numpy array CalNP
-	meanArray = np.mean(inputArray, axis = 0) # axis = 0 represents columns
+	meanArray = np.nanmean(inputArray, axis = 0) # axis = 0 represents columns
 	print("Mean across columns is:")
 	print(meanArray)
 	print("")
 
 	# find the MAX of the numpy array CalNp
-	maxArray = np.amax(inputArray, axis = 0) # axis = 0 represents columns
+	maxArray = np.nanmax(inputArray, axis = 0) # axis = 0 represents columns
 	print("Max across columns: ")
 	print(maxArray)
 	print("")
 
 	# find the MIN of the numpy array CalNp
-	minArray = np.amin(inputArray, axis = 0) # axis = 0 represents columns
+	minArray = np.nanmin(inputArray, axis = 0) # axis = 0 represents columns
 	print("Min across columns: ")
 	print(minArray)
 	print("")
